@@ -5,8 +5,7 @@ import 'package:flutter/material.dart';
 import 'data.dart';
 
 class AnimatedIconButton extends StatefulWidget {
-  AnimatedIconButton({
-    Key? key,
+  const AnimatedIconButton({
     this.size = 30,
     this.initialIcon = 0,
     required this.icons,
@@ -27,7 +26,8 @@ class AnimatedIconButton extends StatefulWidget {
     this.visualDensity,
     this.alignment = Alignment.center,
     this.splashRadius,
-  }) : super(key: key);
+    super.key,
+  });
 
   /// The size of the [AnimatedIconButton].
   final double size;
@@ -220,7 +220,6 @@ class _AnimatedIconButtonState extends State<AnimatedIconButton>
           status == AnimationStatus.reverse) {
         _changeIcon(status);
       }
-      // }
     });
   }
 
@@ -305,5 +304,11 @@ class _AnimatedIconButtonState extends State<AnimatedIconButton>
       alignment: widget.alignment,
       splashRadius: widget.splashRadius,
     );
+  }
+
+  @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
   }
 }
