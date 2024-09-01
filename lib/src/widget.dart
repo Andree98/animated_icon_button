@@ -197,6 +197,8 @@ class _AnimatedIconButtonState extends State<AnimatedIconButton>
 
   @override
   void initState() {
+    super.initState();
+
     animationController = widget.animationController ??
         AnimationController(vsync: this, duration: widget.duration);
     _addStatusListener();
@@ -210,8 +212,6 @@ class _AnimatedIconButtonState extends State<AnimatedIconButton>
 
     halfDuration = Duration(
         milliseconds: animationController.duration!.inMilliseconds ~/ 2);
-
-    super.initState();
   }
 
   void _addStatusListener() {
@@ -265,14 +265,6 @@ class _AnimatedIconButtonState extends State<AnimatedIconButton>
 
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
-      radius: widget.size,
-      backgroundColor: nowIcon.backgroundColor,
-      child: buildIconButton(),
-    );
-  }
-
-  IconButton buildIconButton() {
     return IconButton(
       iconSize: widget.size,
       onPressed: () {
@@ -281,14 +273,15 @@ class _AnimatedIconButtonState extends State<AnimatedIconButton>
         runAnimation(widget.animationDirection);
       },
       icon: AnimatedBuilder(
-          animation: animationController,
-          builder: (BuildContext context, Widget? child) {
-            return Transform.rotate(
-              angle: _arrowAnimation.value * 2.0 * math.pi,
-              child: child,
-            );
-          },
-          child: nowIcon.icon),
+        animation: animationController,
+        builder: (BuildContext context, Widget? child) {
+          return Transform.rotate(
+            angle: _arrowAnimation.value * 2.0 * math.pi,
+            child: child,
+          );
+        },
+        child: nowIcon.icon,
+      ),
       focusColor: widget.focusColor,
       hoverColor: widget.hoverColor,
       highlightColor: widget.highlightColor,

@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'data.dart';
 
@@ -10,37 +12,18 @@ part of 'data.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$AnimatedIconItemTearOff {
-  const _$AnimatedIconItemTearOff();
-
-  _AnimatedIconItem call(
-      {required Icon icon,
-      Color backgroundColor = Colors.transparent,
-      String? tooltip,
-      void Function()? onPressed}) {
-    return _AnimatedIconItem(
-      icon: icon,
-      backgroundColor: backgroundColor,
-      tooltip: tooltip,
-      onPressed: onPressed,
-    );
-  }
-}
-
-/// @nodoc
-const $AnimatedIconItem = _$AnimatedIconItemTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$AnimatedIconItem {
   Icon get icon => throw _privateConstructorUsedError;
   Color get backgroundColor => throw _privateConstructorUsedError;
   String? get tooltip => throw _privateConstructorUsedError;
-  void Function()? get onPressed => throw _privateConstructorUsedError;
+  VoidCallback? get onPressed => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AnimatedIconItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AnimatedIconItemCopyWith<AnimatedIconItem> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,107 +32,114 @@ mixin _$AnimatedIconItem {
 abstract class $AnimatedIconItemCopyWith<$Res> {
   factory $AnimatedIconItemCopyWith(
           AnimatedIconItem value, $Res Function(AnimatedIconItem) then) =
-      _$AnimatedIconItemCopyWithImpl<$Res>;
+      _$AnimatedIconItemCopyWithImpl<$Res, AnimatedIconItem>;
+  @useResult
   $Res call(
       {Icon icon,
       Color backgroundColor,
       String? tooltip,
-      void Function()? onPressed});
+      VoidCallback? onPressed});
 }
 
 /// @nodoc
-class _$AnimatedIconItemCopyWithImpl<$Res>
+class _$AnimatedIconItemCopyWithImpl<$Res, $Val extends AnimatedIconItem>
     implements $AnimatedIconItemCopyWith<$Res> {
   _$AnimatedIconItemCopyWithImpl(this._value, this._then);
 
-  final AnimatedIconItem _value;
   // ignore: unused_field
-  final $Res Function(AnimatedIconItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  /// Create a copy of AnimatedIconItem
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? icon = freezed,
-    Object? backgroundColor = freezed,
+    Object? icon = null,
+    Object? backgroundColor = null,
     Object? tooltip = freezed,
     Object? onPressed = freezed,
   }) {
     return _then(_value.copyWith(
-      icon: icon == freezed
+      icon: null == icon
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as Icon,
-      backgroundColor: backgroundColor == freezed
+      backgroundColor: null == backgroundColor
           ? _value.backgroundColor
           : backgroundColor // ignore: cast_nullable_to_non_nullable
               as Color,
-      tooltip: tooltip == freezed
+      tooltip: freezed == tooltip
           ? _value.tooltip
           : tooltip // ignore: cast_nullable_to_non_nullable
               as String?,
-      onPressed: onPressed == freezed
+      onPressed: freezed == onPressed
           ? _value.onPressed
           : onPressed // ignore: cast_nullable_to_non_nullable
-              as void Function()?,
-    ));
+              as VoidCallback?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$AnimatedIconItemCopyWith<$Res>
+abstract class _$$AnimatedIconItemImplCopyWith<$Res>
     implements $AnimatedIconItemCopyWith<$Res> {
-  factory _$AnimatedIconItemCopyWith(
-          _AnimatedIconItem value, $Res Function(_AnimatedIconItem) then) =
-      __$AnimatedIconItemCopyWithImpl<$Res>;
+  factory _$$AnimatedIconItemImplCopyWith(_$AnimatedIconItemImpl value,
+          $Res Function(_$AnimatedIconItemImpl) then) =
+      __$$AnimatedIconItemImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {Icon icon,
       Color backgroundColor,
       String? tooltip,
-      void Function()? onPressed});
+      VoidCallback? onPressed});
 }
 
 /// @nodoc
-class __$AnimatedIconItemCopyWithImpl<$Res>
-    extends _$AnimatedIconItemCopyWithImpl<$Res>
-    implements _$AnimatedIconItemCopyWith<$Res> {
-  __$AnimatedIconItemCopyWithImpl(
-      _AnimatedIconItem _value, $Res Function(_AnimatedIconItem) _then)
-      : super(_value, (v) => _then(v as _AnimatedIconItem));
+class __$$AnimatedIconItemImplCopyWithImpl<$Res>
+    extends _$AnimatedIconItemCopyWithImpl<$Res, _$AnimatedIconItemImpl>
+    implements _$$AnimatedIconItemImplCopyWith<$Res> {
+  __$$AnimatedIconItemImplCopyWithImpl(_$AnimatedIconItemImpl _value,
+      $Res Function(_$AnimatedIconItemImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AnimatedIconItem get _value => super._value as _AnimatedIconItem;
-
+  /// Create a copy of AnimatedIconItem
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? icon = freezed,
-    Object? backgroundColor = freezed,
+    Object? icon = null,
+    Object? backgroundColor = null,
     Object? tooltip = freezed,
     Object? onPressed = freezed,
   }) {
-    return _then(_AnimatedIconItem(
-      icon: icon == freezed
+    return _then(_$AnimatedIconItemImpl(
+      icon: null == icon
           ? _value.icon
           : icon // ignore: cast_nullable_to_non_nullable
               as Icon,
-      backgroundColor: backgroundColor == freezed
+      backgroundColor: null == backgroundColor
           ? _value.backgroundColor
           : backgroundColor // ignore: cast_nullable_to_non_nullable
               as Color,
-      tooltip: tooltip == freezed
+      tooltip: freezed == tooltip
           ? _value.tooltip
           : tooltip // ignore: cast_nullable_to_non_nullable
               as String?,
-      onPressed: onPressed == freezed
+      onPressed: freezed == onPressed
           ? _value.onPressed
           : onPressed // ignore: cast_nullable_to_non_nullable
-              as void Function()?,
+              as VoidCallback?,
     ));
   }
 }
 
 /// @nodoc
-class _$_AnimatedIconItem implements _AnimatedIconItem {
-  const _$_AnimatedIconItem(
+
+class _$AnimatedIconItemImpl implements _AnimatedIconItem {
+  const _$AnimatedIconItemImpl(
       {required this.icon,
       this.backgroundColor = Colors.transparent,
       this.tooltip,
@@ -157,13 +147,13 @@ class _$_AnimatedIconItem implements _AnimatedIconItem {
 
   @override
   final Icon icon;
-  @JsonKey(defaultValue: Colors.transparent)
   @override
+  @JsonKey()
   final Color backgroundColor;
   @override
   final String? tooltip;
   @override
-  final void Function()? onPressed;
+  final VoidCallback? onPressed;
 
   @override
   String toString() {
@@ -171,53 +161,52 @@ class _$_AnimatedIconItem implements _AnimatedIconItem {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other is _AnimatedIconItem &&
-            (identical(other.icon, icon) ||
-                const DeepCollectionEquality().equals(other.icon, icon)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$AnimatedIconItemImpl &&
+            (identical(other.icon, icon) || other.icon == icon) &&
             (identical(other.backgroundColor, backgroundColor) ||
-                const DeepCollectionEquality()
-                    .equals(other.backgroundColor, backgroundColor)) &&
-            (identical(other.tooltip, tooltip) ||
-                const DeepCollectionEquality()
-                    .equals(other.tooltip, tooltip)) &&
+                other.backgroundColor == backgroundColor) &&
+            (identical(other.tooltip, tooltip) || other.tooltip == tooltip) &&
             (identical(other.onPressed, onPressed) ||
-                const DeepCollectionEquality()
-                    .equals(other.onPressed, onPressed)));
+                other.onPressed == onPressed));
   }
 
   @override
   int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(icon) ^
-      const DeepCollectionEquality().hash(backgroundColor) ^
-      const DeepCollectionEquality().hash(tooltip) ^
-      const DeepCollectionEquality().hash(onPressed);
+      Object.hash(runtimeType, icon, backgroundColor, tooltip, onPressed);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AnimatedIconItem
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  _$AnimatedIconItemCopyWith<_AnimatedIconItem> get copyWith =>
-      __$AnimatedIconItemCopyWithImpl<_AnimatedIconItem>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AnimatedIconItemImplCopyWith<_$AnimatedIconItemImpl> get copyWith =>
+      __$$AnimatedIconItemImplCopyWithImpl<_$AnimatedIconItemImpl>(
+          this, _$identity);
 }
 
 abstract class _AnimatedIconItem implements AnimatedIconItem {
   const factory _AnimatedIconItem(
-      {required Icon icon,
-      Color backgroundColor,
-      String? tooltip,
-      void Function()? onPressed}) = _$_AnimatedIconItem;
+      {required final Icon icon,
+      final Color backgroundColor,
+      final String? tooltip,
+      final VoidCallback? onPressed}) = _$AnimatedIconItemImpl;
 
   @override
-  Icon get icon => throw _privateConstructorUsedError;
+  Icon get icon;
   @override
-  Color get backgroundColor => throw _privateConstructorUsedError;
+  Color get backgroundColor;
   @override
-  String? get tooltip => throw _privateConstructorUsedError;
+  String? get tooltip;
   @override
-  void Function()? get onPressed => throw _privateConstructorUsedError;
+  VoidCallback? get onPressed;
+
+  /// Create a copy of AnimatedIconItem
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
-  _$AnimatedIconItemCopyWith<_AnimatedIconItem> get copyWith =>
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AnimatedIconItemImplCopyWith<_$AnimatedIconItemImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
